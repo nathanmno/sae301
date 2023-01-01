@@ -1,0 +1,96 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 100vh;
+    background-color: #a6a6a6;
+}
+
+.font-inter{
+    font-family: 'Inter', sans-serif;
+}
+
+.logo-nav{
+    width: 100px;
+}
+
+.btn-english-nav{
+    width: 30px;
+}
+
+.center{
+    margin: auto;
+}
+
+.container-flex{
+    display: flex;
+}
+
+.list-style{
+    list-style: none;
+}
+
+.decoration-none{
+    text-decoration: none;
+    color: black;
+}
+
+.menu li{
+    width: 150px;
+    font-size: 0.8rem;
+}
+
+.menu{
+    background-color: #7C7C7C;
+    padding: 5px 40px 5px 40px;
+}
+
+.header-polygone{
+    width: 510px;
+}
+
+.titre-header{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 6rem;
+    margin-top: 150px;
+    margin-left: 10vw;
+    margin-bottom: 35px;
+}
+
+.sous-titre-header{
+    margin-left: 5vw;
+    margin-bottom: 8px;
+}
+
+.texte-header{
+    margin-left: 10vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.btn-header{
+    width: fit-content;
+    padding: 15px;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    margin-right: 20px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    box-shadow: rgba(59, 59, 59, 0.623) 10px 5px 5px;
+}
+
+.all-btn-header{
+    margin-left: 10vw;
+}
