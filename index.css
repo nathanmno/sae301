@@ -1,3 +1,14 @@
+@keyframes ChangePage {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
 *,
 *::before,
 *::after {
@@ -9,33 +20,33 @@
     padding: 0;
 }
 
-header{
-    height: 100vh;
-    background-color: #a6a6a6;
-}
+/* Classes réutilisées dans tous le code*/
 
 .font-inter{
     font-family: 'Inter', sans-serif;
 }
 
-.logo-nav{
-    width: 100px;
+.english-version{
+    display: none;
+    animation-name: ChangePage;
+    animation-duration: 2.5s;
 }
 
-.btn-english-nav{
-    width: 30px;
+.french-version{
+    animation-name: ChangePage;
+    animation-duration: 2.5s;
 }
 
 .center{
     margin: auto;
 }
 
-.container-flex{
-    display: flex;
+.center2{
+    text-align: center;
 }
 
-.list-style{
-    list-style: none;
+.container-flex{
+    display: flex;
 }
 
 .decoration-none{
@@ -43,13 +54,40 @@ header{
     color: black;
 }
 
+/*Header*/
+
+header{
+    height: 100vh;
+    background-color: white;
+}
+
+.logo-nav{
+    width: 100px;
+}
+
+.btn-english-nav{
+    height: 45px;
+}
+.btn-french-nav{
+    height: 50px;
+}
+
+.list-style{
+    list-style: none;
+}
+
 .menu li{
     width: 150px;
     font-size: 0.8rem;
+    text-align: center;
+}
+
+.menu a{
+    width: 150px;
 }
 
 .menu{
-    background-color: #7C7C7C;
+    background-color: #4f7698;
     padding: 5px 40px 5px 40px;
 }
 
@@ -67,8 +105,11 @@ header{
 }
 
 .sous-titre-header{
-    margin-left: 5vw;
-    margin-bottom: 8px;
+    margin-left: 10vw;
+    margin-bottom: 30px;
+    font-size: 2.8rem;
+    -webkit-text-stroke: black 1.5px;
+    color: #4f7698;
 }
 
 .texte-header{
@@ -81,7 +122,7 @@ header{
 .btn-header{
     width: fit-content;
     padding: 15px;
-    background-color: black;
+    background-color: #4f7698;
     color: white;
     border-radius: 8px;
     margin-right: 20px;
@@ -89,8 +130,76 @@ header{
     font-family: 'Montserrat', sans-serif;
     font-size: 1.1rem;
     box-shadow: rgba(59, 59, 59, 0.623) 10px 5px 5px;
+    border: white solid 1px;
 }
 
 .all-btn-header{
     margin-left: 10vw;
+}
+
+/*Div chiffres de la formation*/
+
+.title-chiffres{
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.div-chiffres{
+    justify-content: space-around;
+    margin: 0px 50px 0px 50px;
+}
+
+.texts-chiffres{
+    font-size: 1rem;
+    padding-right: 40px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.chiffres{
+    margin-top: 15px;
+    font-size: 5rem;
+    text-align: right;
+    margin-bottom: 80px;
+}
+
+/*Descriptif formation*/
+
+.descriptif-formation{
+    margin: 60px 200px 50px 200px;
+}
+
+.all-text-desc-formation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 30px 0px 30px;
+}
+
+.titre-desc-formation{
+    margin-bottom: 30px;
+    font-size: 1.7rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.text-desc-formation{
+    font-size: 1.1rem;
+}
+
+.img-iut{
+    border-radius: 15px;
+}
+
+/*Dernière actu*/
+
+.derniere-actu{
+    margin-top: 80px 200px 0px 200px;
+}
+
+.titre-derniere-actu{
+    font-size: 2rem;
 }
