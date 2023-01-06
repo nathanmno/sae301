@@ -133,6 +133,12 @@ header{
     border: white solid 1px;
 }
 
+.btn-header:hover{
+    transform: translate(-2px, -2px);
+    background-color: #6e9cc5;
+    transition: 0.5s;
+}
+
 .all-btn-header{
     margin-left: 10vw;
 }
@@ -197,9 +203,147 @@ header{
 /*Dernière actu*/
 
 .derniere-actu{
-    margin-top: 80px 200px 0px 200px;
+    margin: 80px 200px 0px 200px;
 }
 
 .titre-derniere-actu{
     font-size: 2rem;
+    margin-left: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.actu-nuit-du-dev{
+    margin: 40px 30px 0px 50px;
+    align-items: center;
+}
+
+.actu-nuit-du-dev-img{
+    width: 700px;
+    border: solid rgba(0, 0, 0, 0.356) 1px;
+    border-radius: 25px;
+}
+
+.text-actu-nuit-du-dev{
+    margin-left: -50px;
+    font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: white;
+    background-color: #4f7698ba;
+    border-radius: 10px;
+    height: fit-content;
+    padding: 10px;
+    width: 400px;
+}
+
+.voir-plus-actu{
+    margin: 30px auto 30px auto;
+    font-weight: 500;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 13px;
+    color: white;
+    width: fit-content;
+    background-color: #4f7698;
+    padding: 8px 45px 8px 45px;
+    box-shadow: rgba(59, 59, 59, 0.623) 10px 5px 5px;
+    border: white solid 1px;
+}
+
+.voir-plus-actu:hover{
+    transform: translate(-2px, -2px);
+    background-color: #6e9cc5;
+    transition: 0.5s;
+}
+
+/*Projets etudiants*/
+
+.projets-etudiants{
+    margin: 80px 0px 50px 0px;
+    overflow-x: hidden;
+}
+
+.titre-projets-etudiants{
+    font-size: 2rem;
+    margin-left: 230px;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.container-parallelogram{
+    margin-left: -100px;
+    margin-right: -100px;
+}
+
+#parallelogram1 {
+    width: 900px;
+    height: 400px;
+    -webkit-transform: skew(-15deg);
+       -moz-transform: skew(-15deg);
+         -o-transform: skew(-15deg);
+    background-image: url(./img/projet1.png);
+    border-right: black solid 10px;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+#parallelogram1:hover{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#parallelogram2 {
+    width: 900px;
+    height: 400px;
+    -webkit-transform: skew(-15deg);
+       -moz-transform: skew(-15deg);
+         -o-transform: skew(-15deg);
+    background-image: url(./img/projet2.jpg);
+    border-right: black solid 10px;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+#parallelogram2:hover{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#parallelogram3 {
+    width: 900px;
+    height: 400px;
+    -webkit-transform: skew(-15deg);
+       -moz-transform: skew(-15deg);
+         -o-transform: skew(-15deg);
+    background-image: url(./img/projet3.png);
+    border-right: black solid 10px;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+#parallelogram3:hover{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.voir-plus-projets{
+    margin: 30px auto 30px auto;
+    font-weight: 500;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 13px;
+    color: white;
+    width: fit-content;
+    background-color: #4f7698;
+    padding: 8px 45px 8px 45px;
+    box-shadow: rgba(59, 59, 59, 0.623) 10px 5px 5px;
+    border: white solid 1px;
+}
+
+.voir-plus-projets:hover{
+    transform: translate(-2px, -2px);
+    background-color: #6e9cc5;
+    transition: 0.5s;
 }
