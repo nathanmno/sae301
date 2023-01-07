@@ -347,3 +347,90 @@ header{
     background-color: #6e9cc5;
     transition: 0.5s;
 }
+
+/*Temoignages*/
+
+.temoignages{
+    margin: 100px 250px 50px 250px;
+}
+
+.temoignages h4{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.sous-titre-temoignages{
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.container-temoignages{
+    justify-content: space-between;
+}
+
+.temoignage{
+    padding: 45px;
+    margin: 15px;
+    text-align: center;
+    width: 350px;
+    background-color: #4f7698af;
+    border-right: solid 2px black;
+    border-bottom: solid 2px black;
+    border-radius: 8px;
+    height: fit-content;
+}
+
+.hr-temoignage{
+    width: 182px;
+    margin: auto;
+}
+
+.text-temoignage{
+    margin: 33px 7px 33px 7px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.auteur-temoignage{
+    margin: 25px;
+    font-weight: 500;
+    letter-spacing: 1.6px;
+    font-size: 0.7rem;
+}
+
+.metier-auteur{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 0.7rem;
+    margin-top: -20px;
+}
+
+/*Footer*/
+
+.container-liens{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    justify-content: space-around;
+    text-align: center;
+    background-color: #163652;
+}
+
+.titre-footer{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.container-copyright{
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
