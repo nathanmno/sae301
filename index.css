@@ -267,65 +267,31 @@ header{
 .titre-projets-etudiants{
     font-size: 2rem;
     margin-left: 230px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
 }
 
 .container-parallelogram{
-    margin-left: -100px;
-    margin-right: -100px;
+    width: 100%;
 }
 
-#parallelogram1 {
-    width: 900px;
-    height: 400px;
-    -webkit-transform: skew(-15deg);
-       -moz-transform: skew(-15deg);
-         -o-transform: skew(-15deg);
-    background-image: url(./img/projet1.png);
-    border-right: black solid 10px;
-    opacity: 0.7;
-    transition: 0.5s;
-}
-
-#parallelogram1:hover{
+#parallelogram:hover{
     opacity: 1;
     transition: 0.5s;
+    transform: rotate(0deg);
 }
 
-#parallelogram2 {
-    width: 900px;
-    height: 400px;
-    -webkit-transform: skew(-15deg);
-       -moz-transform: skew(-15deg);
-         -o-transform: skew(-15deg);
-    background-image: url(./img/projet2.jpg);
-    border-right: black solid 10px;
+#parallelogram{
+    border-radius: 8px;
+    transition: 0.5s;
+    margin-left: 20px;
+    width: 33%;
+    min-height: 180px;
+    max-height: 300px;
+    margin-bottom: 18px;
+    transform: rotate(4deg);
     opacity: 0.7;
-    transition: 0.5s;
-}
-
-#parallelogram2:hover{
-    opacity: 1;
-    transition: 0.5s;
-}
-
-#parallelogram3 {
-    width: 900px;
-    height: 400px;
-    -webkit-transform: skew(-15deg);
-       -moz-transform: skew(-15deg);
-         -o-transform: skew(-15deg);
-    background-image: url(./img/projet3.png);
-    border-right: black solid 10px;
-    opacity: 0.7;
-    transition: 0.5s;
-}
-
-#parallelogram3:hover{
-    opacity: 1;
-    transition: 0.5s;
 }
 
 .voir-plus-projets{
