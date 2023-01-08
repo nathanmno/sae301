@@ -87,7 +87,7 @@ header{
 }
 
 .menu{
-    background-color: #4f7698;
+    background-color: #4f7698af;
     padding: 5px 40px 5px 40px;
 }
 
@@ -143,7 +143,7 @@ header{
     border-radius: 13px;
     color: white;
     width: fit-content;
-    background-color: #4f7698;
+    background-color: #4f7698af;
     padding: 8px 45px 8px 45px;
     box-shadow: rgba(59, 59, 59, 0.623) 10px 5px 5px;
     border: white solid 1px;
@@ -180,4 +180,106 @@ header{
     font-family: 'Montserrat', sans-serif;
     font-size: 0.7rem;
     font-weight: 600;
+}
+
+@media screen and (max-width: 550px) {
+
+    /*Header*/
+ 
+ .container-flex{
+     flex-direction: column;
+ }
+ 
+ .logo-nav{
+     width: 50px;
+     float: left;
+     margin-left: -30px;
+     margin-bottom: -100px;
+ }
+ 
+ .btn-english-nav{
+     width: 25px;
+     height: 25px;
+     margin-top: 10px;
+ }
+ .btn-french-nav{
+     width: 25px;
+     height: 25px;
+     margin-top: 10px;
+ }
+ 
+ .menu li{
+     width: 150px;
+     font-size: 0.7rem;
+     text-align: center;
+ }
+ 
+ .header-polygone{
+     width: 300px;
+ }
+
+
+/*A propos*/
+
+.titre{
+    margin: 45px 0px 20px 60px;
+}
+
+.contexte{
+    margin: 30px 60px 20px 60px;
+    font-size: 0.75rem;
+}
+
+.icon{
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.createurs{
+    margin-top: 30px;
+}
+
+.job{
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.name{
+    margin-bottom: 30px;
+}
+
+.container-dev{
+    justify-content: space-around;
+    width: 260px;
+}
+
+.mmi-en-details{
+    font-size: 0.8rem;
+}
+
+/*Footer*/
+
+.container-liens{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.titre-footer{
+    font-size: 0.7rem;
+    margin-bottom: -10px;
+}
+
+.text-footer{
+    font-size: 0.7rem;
+    margin-bottom: 10px;
+}
+
+.container-copyright{
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 0.5rem;
+} 
+
+ 
 }

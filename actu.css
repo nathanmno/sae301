@@ -87,7 +87,7 @@ header{
 }
 
 .menu{
-    background-color: #4f7698;
+    background-color: #4f7698af;
     padding: 5px 40px 5px 40px;
 }
 
@@ -130,6 +130,12 @@ header{
     width: 700px;
     border: solid rgba(0, 0, 0, 0.356) 1px;
     border-radius: 25px;
+    transition: 0.3s;
+}
+
+.img-actu:hover{
+    width: 750px;
+    transition: 0.3s;
 }
 
 .text-actu{
@@ -138,7 +144,7 @@ header{
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     color: white;
-    background-color: #4f7698ba;
+    background-color: #4f7698af;
     border-radius: 10px;
     height: fit-content;
     padding: 10px;
@@ -164,6 +170,10 @@ header{
     width: 100%;
 }
 
+.lien-parallelogram{
+    width: 100%;
+}
+
 #parallelogram:hover{
     opacity: 1;
     transition: 0.5s;
@@ -174,7 +184,7 @@ header{
     border-radius: 8px;
     transition: 0.5s;
     margin-left: 20px;
-    width: 33%;
+    width: 95%;
     min-height: 180px;
     max-height: 300px;
     margin-bottom: 18px;
@@ -190,7 +200,7 @@ header{
     border-radius: 13px;
     color: white;
     width: fit-content;
-    background-color: #4f7698;
+    background-color: #4f7698af;
     padding: 8px 45px 8px 45px;
     box-shadow: rgba(59, 59, 59, 0.623) 10px 5px 5px;
     border: white solid 1px;
@@ -227,4 +237,140 @@ header{
     font-family: 'Montserrat', sans-serif;
     font-size: 0.7rem;
     font-weight: 600;
+}
+
+@media screen and (max-width: 550px) {
+
+    /*Header*/
+ 
+ .container-flex{
+     flex-direction: column;
+ }
+ 
+ .logo-nav{
+     width: 50px;
+     float: left;
+     margin-left: -30px;
+     margin-bottom: -100px;
+ }
+ 
+ .btn-english-nav{
+     width: 25px;
+     height: 25px;
+     margin-top: 10px;
+ }
+ .btn-french-nav{
+     width: 25px;
+     height: 25px;
+     margin-top: 10px;
+ }
+ 
+ .menu li{
+     width: 150px;
+     font-size: 0.7rem;
+     text-align: center;
+ }
+ 
+ .header-polygone{
+     width: 300px;
+ }
+
+/*Actu*/
+
+/*Dernière actu*/
+
+.titre{
+    font-family: 'Montserrat', sans-serif ;
+    font-weight: 700;
+    font-size: 1.7rem;
+    margin: 40px 60px 0px 60px
+}
+
+.container-actus{
+    margin: 40px 60px 0px 40px;
+}
+
+.div-actu{
+    margin: 0px 0px 50px 0px;
+}
+
+.titre-actu{
+    font-size: 1.5rem;
+    margin-left: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-bottom: -20px;
+}
+
+.actu{
+    margin: 40px 30px 0px 50px;
+    align-items: center;
+}
+
+.img-actu{
+    width: 300px;
+}
+
+.img-actu:hover{
+    width: 350px;
+}
+
+.text-actu{
+    margin-left: 0px;
+    font-size: 1rem;
+    width: 250px;
+}
+
+/*Projets etudiants*/
+
+.projets-etudiants{
+    margin: 80px 0px 50px 0px;
+}
+
+.titre-projets-etudiants{
+    font-size: 1.5rem;
+    margin-left: 30px;
+    margin-bottom: 40px;
+}
+
+.container-parallelogram{
+    width: 100%;
+}
+
+.lien-parallelogram{
+    width: 100%;
+}
+
+#parallelogram{
+    width: 85%;
+}
+
+.voir-plus-projets{
+    margin: 30px auto 10px auto;
+}
+
+/*Footer*/
+
+.container-liens{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.titre-footer{
+    font-size: 0.7rem;
+    margin-bottom: -10px;
+}
+
+.text-footer{
+    font-size: 0.7rem;
+    margin-bottom: 10px;
+}
+
+.container-copyright{
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 0.5rem;
+} 
+
 }

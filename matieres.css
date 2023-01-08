@@ -87,7 +87,7 @@ header{
 }
 
 .menu{
-    background-color: #4f7698;
+    background-color: #4f7698af;
     padding: 5px 40px 5px 40px;
 }
 
@@ -118,12 +118,20 @@ header{
 
 .div-matière{
     margin: 0px 209px 32px 204px;
-    background-color: #4f7698;
+    background-color: #4f7698af;
     padding-left: 15px;
     padding-right: 30px;
     padding-bottom: 10px;
     padding-top: 10px;
     border-radius: 20px;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.div-matière:hover{
+    transform: scale(1.1);
+    opacity: 1;
+    transition: 0.3s;
 }
 
 .text{
@@ -148,6 +156,8 @@ header{
 }
 
 /*Voir les actus*/
+
+
 
 .titre-actus{
     font-family: 'Montserrat', sans-serif ;
@@ -180,6 +190,12 @@ header{
     width: 700px;
     border: solid rgba(0, 0, 0, 0.356) 1px;
     border-radius: 25px;
+    transition: 0.3s;
+}
+
+.img-actu:hover{
+    width: 750px;
+    transition: 0.3s;
 }
 
 .text-actu{
@@ -188,7 +204,7 @@ header{
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     color: white;
-    background-color: #4f7698ba;
+    background-color: #4f7698af;
     border-radius: 10px;
     height: fit-content;
     padding: 10px;
@@ -203,7 +219,7 @@ header{
     border-radius: 13px;
     color: white;
     width: fit-content;
-    background-color: #4f7698;
+    background-color: #4f7698af;
     padding: 8px 45px 8px 45px;
     box-shadow: rgba(59, 59, 59, 0.623) 10px 5px 5px;
     border: white solid 1px;

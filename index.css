@@ -87,7 +87,7 @@ header{
 }
 
 .menu{
-    background-color: #4f7698;
+    background-color: #4f7698af;
     padding: 5px 40px 5px 40px;
 }
 
@@ -109,7 +109,7 @@ header{
     margin-bottom: 30px;
     font-size: 2.8rem;
     -webkit-text-stroke: black 1.5px;
-    color: #4f7698;
+    color: #4f7698af;
 }
 
 .texte-header{
@@ -122,7 +122,7 @@ header{
 .btn-header{
     width: fit-content;
     padding: 15px;
-    background-color: #4f7698;
+    background-color: #4f7698af;
     color: white;
     border-radius: 8px;
     margin-right: 20px;
@@ -222,6 +222,12 @@ header{
     width: 700px;
     border: solid rgba(0, 0, 0, 0.356) 1px;
     border-radius: 25px;
+    transition: 0.3s;
+}
+
+.actu-nuit-du-dev-img:hover{
+    width: 750px;
+    transition: 0.3s;
 }
 
 .text-actu-nuit-du-dev{
@@ -230,7 +236,7 @@ header{
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     color: white;
-    background-color: #4f7698ba;
+    background-color: #4f7698af;
     border-radius: 10px;
     height: fit-content;
     padding: 10px;
@@ -245,7 +251,7 @@ header{
     border-radius: 13px;
     color: white;
     width: fit-content;
-    background-color: #4f7698;
+    background-color: #4f7698af;
     padding: 8px 45px 8px 45px;
     box-shadow: rgba(59, 59, 59, 0.623) 10px 5px 5px;
     border: white solid 1px;
@@ -276,6 +282,10 @@ header{
     width: 100%;
 }
 
+.lien-parallelogram{
+    width: 100%;
+}
+
 #parallelogram:hover{
     opacity: 1;
     transition: 0.5s;
@@ -286,7 +296,7 @@ header{
     border-radius: 8px;
     transition: 0.5s;
     margin-left: 20px;
-    width: 33%;
+    width: 95%;
     min-height: 180px;
     max-height: 300px;
     margin-bottom: 18px;
@@ -302,7 +312,7 @@ header{
     border-radius: 13px;
     color: white;
     width: fit-content;
-    background-color: #4f7698;
+    background-color: #4f7698af;
     padding: 8px 45px 8px 45px;
     box-shadow: rgba(59, 59, 59, 0.623) 10px 5px 5px;
     border: white solid 1px;
@@ -399,4 +409,267 @@ header{
     font-family: 'Montserrat', sans-serif;
     font-size: 0.7rem;
     font-weight: 600;
+}
+
+@media screen and (max-width: 550px) {
+
+   /*Header*/
+
+.container-flex{
+    flex-direction: column;
+}
+
+.logo-nav{
+    width: 50px;
+    float: left;
+    margin-left: -30px;
+    margin-bottom: -100px;
+}
+
+.container-text-header{
+    margin-top: -100px;
+}
+
+.btn-english-nav{
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+}
+.btn-french-nav{
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+}
+
+.menu li{
+    width: 150px;
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+.header-polygone{
+    width: 200px;
+}
+
+.titre-header{
+    font-size: 3.5rem;
+    margin-top: 150px;
+    margin-left: 10vw;
+    margin-bottom: 20px;
+}
+
+.sous-titre-header{
+    margin-left: 10vw;
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.texte-header{
+    margin-left: 10vw;
+    margin-bottom: 50px;
+    font-size: 0.9rem;
+}
+
+.btn-header{
+    font-size: 0.6rem;
+    margin-top: -20px;
+}
+
+
+.all-btn-header{
+    margin-left: 10vw;
+    flex-direction: row;
+}
+
+/*Div chiffres de la formation*/
+
+.title-chiffres{
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.div-chiffres{
+    justify-content: space-around;
+    margin: 0px 50px 0px 50px;
+}
+
+.texts-chiffres{
+    font-size: 0.8rem;
+    padding-right: 40px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.chiffres{
+    margin-top: 10px;
+    font-size: 3rem;
+    text-align: right;
+    margin-bottom: 60px;
+}
+
+/*Descriptif formation*/
+
+.descriptif-formation{
+    margin: 40px 60px 30px 60px;
+}
+
+.all-text-desc-formation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 0px 20px 0px;
+}
+
+.titre-desc-formation{
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.text-desc-formation{
+    font-size: 1rem;
+}
+
+.img-iut{
+    border-radius: 15px;
+}
+
+/*Dernière actu*/
+
+.derniere-actu{
+    margin: 40px 60px 0px 60px;
+}
+
+.titre-derniere-actu{
+    font-size: 1.8rem;
+    margin-left: 15px;
+    margin-bottom: 40px;
+}
+
+.actu-nuit-du-dev{
+    margin: 0px 0px 20px 0px;
+}
+
+.actu-nuit-du-dev-img{
+    width: 300px;
+}
+
+.actu-nuit-du-dev-img:hover{
+    width: 350px;
+}
+
+.text-actu-nuit-du-dev{
+    margin-left: 0px;
+    font-size: 1rem;
+    width: fit-content;
+}
+
+.voir-plus-actu{
+    margin: 50px auto 30px auto;
+}
+
+/*Projets etudiants*/
+
+.projets-etudiants{
+    margin: 80px 0px 50px 0px;
+}
+
+.titre-projets-etudiants{
+    font-size: 1.5rem;
+    margin-left: 30px;
+    margin-bottom: 40px;
+}
+
+.container-parallelogram{
+    width: 100%;
+}
+
+.lien-parallelogram{
+    width: 100%;
+}
+
+#parallelogram{
+    width: 85%;
+}
+
+.voir-plus-projets{
+    margin: 30px auto 10px auto;
+}
+
+
+/*Temoignages*/
+
+.temoignages{
+    margin: 50px 60px 50px 60px;
+}
+
+.temoignages h4{
+    font-size: 1.9rem;
+    margin-bottom: 10px;
+}
+
+.sous-titre-temoignages{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container-temoignages{
+    align-items: center;
+}
+
+.temoignage{
+    padding: 30px;
+    margin: 0px 0px 10px 0px;
+    text-align: center;
+    width: 250px;
+}
+
+.hr-temoignage{
+    width: 150px;
+    margin: auto;
+}
+
+.text-temoignage{
+    margin: 33px 7px 33px 7px;
+    font-size: 0.6rem;
+}
+
+.auteur-temoignage{
+    margin: 25px;
+    font-size: 0.5rem;
+}
+
+.metier-auteur{
+    font-size: 0.5rem;
+    margin-top: -20px;
+}
+
+/*Footer*/
+
+.container-liens{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.titre-footer{
+    font-size: 0.7rem;
+    margin-bottom: -10px;
+}
+
+.text-footer{
+    font-size: 0.7rem;
+    margin-bottom: 10px;
+}
+
+.container-copyright{
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 0.5rem;
+} 
+    
 }

@@ -87,7 +87,7 @@ header{
 }
 
 .menu{
-    background-color: #4f7698;
+    background-color: #4f7698af;
     padding: 5px 40px 5px 40px;
 }
 
@@ -136,6 +136,17 @@ header{
     transform: rotate(-2.5deg);
 }
 
+#parallelogram:hover{
+    border-radius: 8px;
+    transition: 0.5s;
+    margin-left: 20px;
+    width: 290px;
+    min-height: 180px;
+    max-height: 300px;
+    margin-bottom: 18px;
+    transform: rotate(1deg);
+}
+
 .voir-matieres{
     margin: 30px auto 30px auto;
     font-weight: 500;
@@ -144,7 +155,7 @@ header{
     border-radius: 13px;
     color: white;
     width: fit-content;
-    background-color: #4f7698;
+    background-color: #4f7698af;
     padding: 8px 45px 8px 45px;
     box-shadow: rgba(59, 59, 59, 0.623) 10px 5px 5px;
     border: white solid 1px;

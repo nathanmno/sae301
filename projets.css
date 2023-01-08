@@ -87,7 +87,7 @@ header{
 }
 
 .menu{
-    background-color: #4f7698;
+    background-color: #4f7698af;
     padding: 5px 40px 5px 40px;
 }
 
@@ -111,7 +111,7 @@ header{
 
 .projet{
     margin: 50px 250px 50px 250px;
-    background-color: #4f7698;
+    background-color: #4f7698af;
     background-size: cover;
     background-position: center;
     padding-top: 20px;
@@ -158,65 +158,29 @@ header{
 }
 
 .container-parallelogram{
-    margin-left: -100px;
-    margin-right: -100px;
+    width: 100%;
 }
 
-#parallelogram1 {
-    width: 900px;
-    height: 400px;
-    -webkit-transform: skew(-15deg);
-       -moz-transform: skew(-15deg);
-         -o-transform: skew(-15deg);
-    background-image: url(./img/profil.png);
-    background-position: center;
-    background-size: cover;
-    border-right: black solid 10px;
-    opacity: 0.7;
-    transition: 0.5s;
+.lien-parallelogram{
+    width: 100%;
 }
 
-#parallelogram1:hover{
+#parallelogram:hover{
     opacity: 1;
     transition: 0.5s;
+    transform: rotate(0deg);
 }
 
-#parallelogram2 {
-    width: 900px;
-    height: 400px;
-    -webkit-transform: skew(-15deg);
-       -moz-transform: skew(-15deg);
-         -o-transform: skew(-15deg);
-    background-image: url(./img/profil.png);
-    background-position: center;
-    background-size: cover;
-    border-right: black solid 10px;
+#parallelogram{
+    border-radius: 8px;
+    transition: 0.5s;
+    margin-left: 20px;
+    width: 95%;
+    min-height: 180px;
+    max-height: 300px;
+    margin-bottom: 18px;
+    transform: rotate(4deg);
     opacity: 0.7;
-    transition: 0.5s;
-}
-
-#parallelogram2:hover{
-    opacity: 1;
-    transition: 0.5s;
-}
-
-#parallelogram3 {
-    width: 900px;
-    height: 400px;
-    -webkit-transform: skew(-15deg);
-       -moz-transform: skew(-15deg);
-         -o-transform: skew(-15deg);
-    background-image: url(./img/profil.png);
-    background-position: center;
-    background-size: cover;
-    border-right: black solid 10px;
-    opacity: 0.7;
-    transition: 0.5s;
-}
-
-#parallelogram3:hover{
-    opacity: 1;
-    transition: 0.5s;
 }
 
 .voir-plus-equipe{
@@ -227,7 +191,7 @@ header{
     border-radius: 13px;
     color: white;
     width: fit-content;
-    background-color: #4f7698;
+    background-color: #4f7698af;
     padding: 8px 45px 8px 45px;
     box-shadow: rgba(59, 59, 59, 0.623) 10px 5px 5px;
     border: white solid 1px;
