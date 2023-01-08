@@ -133,6 +133,12 @@ header{
 .img-projet{
     width: 450px;
     border-radius: 8px;
+    transition: 0.2s;
+}
+
+.img-projet:hover{
+    transform: rotate(-2.5deg);
+    transition: 0.2s;
 }
 
 .nomAndImg{
@@ -201,4 +207,177 @@ header{
     transform: translate(-2px, -2px);
     background-color: #6e9cc5;
     transition: 0.5s;
+}
+
+/*Footer*/
+
+.container-liens{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    justify-content: space-around;
+    text-align: center;
+    background-color: #163652;
+}
+
+.titre-footer{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.container-copyright{
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+
+@media screen and (max-width: 550px) {
+
+    /*Header*/
+ 
+ .container-flex{
+     flex-direction: column;
+ }
+ 
+ .logo-nav{
+     width: 50px;
+     float: left;
+     margin-left: -30px;
+     margin-bottom: -100px;
+ }
+ 
+ .btn-english-nav{
+     width: 25px;
+     height: 25px;
+     margin-top: 10px;
+ }
+ .btn-french-nav{
+     width: 25px;
+     height: 25px;
+     margin-top: 10px;
+ }
+ 
+ .menu li{
+     width: 150px;
+     font-size: 0.7rem;
+     text-align: center;
+ }
+ 
+ .header-polygone{
+     width: 300px;
+ }
+
+/*Projets*/
+
+.titre{
+    font-size: 1.7rem;
+    margin: 40px 60px 0px 60px
+}
+
+.container-projets{
+    margin: 40px 60px 0px 40px;
+}
+
+.projet{
+    margin: 80px 0px 50px 0px;
+}
+
+.titre-projets-etudiants{
+    font-size: 1.5rem;
+    margin-left: 30px;
+    margin-bottom: 40px;
+}
+
+.container-parallelogram{
+    width: 100%;
+}
+
+.lien-parallelogram{
+    width: 100%;
+}
+
+#parallelogram{
+    width: 85%;
+}
+
+
+.nom-projet{
+    font-size: 1.2rem;
+}
+
+.img-projet{
+    margin-top: 10px;
+    width: 200px;
+}
+
+.nomAndImg{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+/*Voir l'équipe enseignante*/
+
+.equipe{
+    margin: 80px 0px 50px 0px;
+    overflow-x: hidden;
+}
+
+.titre-equipe{
+    font-size: 1.5rem;
+    margin-left: 30px;
+    margin-bottom: 40px;
+}
+
+.container-parallelogram{
+    width: 100%;
+}
+
+.lien-parallelogram{
+    width: 100%;
+}
+
+#parallelogram:hover{
+    opacity: 1;
+    transition: 0.5s;
+    transform: rotate(0deg);
+}
+
+#parallelogram{
+    width: 85%;
+}
+
+.voir-plus-equipe{
+    font-size: 0.8rem;
+    padding: 8px 45px 8px 45px;
+}
+
+/*Footer*/
+
+.container-liens{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.titre-footer{
+    font-size: 0.7rem;
+    margin-bottom: -10px;
+}
+
+.text-footer{
+    font-size: 0.7rem;
+    margin-bottom: 10px;
+}
+
+.container-copyright{
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 0.5rem;
+} 
 }

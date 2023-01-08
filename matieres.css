@@ -99,6 +99,11 @@ header{
 
 /*Matières*/
 
+.container-flex-2{
+    display: flex;
+    justify-content: space-between;
+}
+
 .titre{
     font-family: 'Montserrat', sans-serif ;
     font-weight: 700;
@@ -147,11 +152,9 @@ header{
 }
 
 .img-matiere{
-    background-image: url(./img/iut-provisoire.jpg);
-    background-size: cover;
-    background-position: center;
-    width: 186px;
-    height: 186px;
+    width: 200px;
+    min-height: 180px;
+    max-height: 230px;
     border-radius: 10px;
 }
 
@@ -258,4 +261,167 @@ header{
     font-weight: 600;
 }
 
+@media screen and (max-width: 550px) {
+
+    /*Header*/
+
+.container-flex{
+    flex-direction: column;
+}
+ 
+ .logo-nav{
+     width: 50px;
+     float: left;
+     margin-left: -30px;
+     margin-bottom: -100px;
+ }
+ 
+ .btn-english-nav{
+     width: 25px;
+     height: 25px;
+     margin-top: 10px;
+ }
+ .btn-french-nav{
+     width: 25px;
+     height: 25px;
+     margin-top: 10px;
+ }
+ 
+ .menu li{
+     width: 150px;
+     font-size: 0.7rem;
+     text-align: center;
+ }
+ 
+ .header-polygone{
+     width: 300px;
+ }
+
+/*Matières*/
+
+.container-flex-2{
+    display: block;
+}
+
+.titre{
+    font-size: 1.7rem;
+    margin: 40px 60px -30px 0px
+}
+
+.container-matieres{
+    margin: 40px 60px 0px 40px;
+}
+
+.div-matière{
+    margin: 80px 0px 50px 0px;
+}
+
+.flex{
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.flex2{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.text{
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.text-matiere{
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif ;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.img-matiere{
+    width: 150px;
+    min-height: 120px;
+    max-height: 200px;
+    border-radius: 10px;
+}
+
+/*Voir les actus*/
+
+
+.titre-actus{
+    font-size: 1.7rem;
+    margin: 40px 60px -30px 0px
+}
+
+.container-actus{
+    margin: 40px 60px 0px 40px;
+}
+
+.div-actu{
+    margin: 80px 0px 50px 0px;
+}
+
+.titre-actu{
+    font-size: 1.2rem;
+    margin-left: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.actu{
+    margin: 40px 30px 0px 50px;
+    align-items: center;
+}
+
+.img-actu{
+    width: 700px;
+    border: solid rgba(0, 0, 0, 0.356) 1px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.img-actu:hover{
+    width: 750px;
+    transition: 0.3s;
+}
+
+.text-actu{
+    margin-left: -50px;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: white;
+    background-color: #4f7698af;
+    border-radius: 10px;
+    height: fit-content;
+    padding: 10px;
+    width: 400px;
+}
+
+.voir-plus-actu{
+    margin: 30px auto 30px auto;
+    font-weight: 500;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 13px;
+    color: white;
+    width: fit-content;
+    background-color: #4f7698af;
+    padding: 8px 45px 8px 45px;
+    box-shadow: rgba(59, 59, 59, 0.623) 10px 5px 5px;
+    border: white solid 1px;
+}
+
+.voir-plus-actu:hover{
+    transform: translate(-2px, -2px);
+    background-color: #6e9cc5;
+    transition: 0.5s;
+}
+
+}
 
