@@ -355,43 +355,38 @@ header{
 
 .titre-actus{
     font-size: 1.7rem;
-    margin: 40px 60px -30px 0px
+    margin: 40px 60px -30px 50px
 }
 
 .container-actus{
-    margin: 40px 60px 0px 40px;
+    margin: 20px 30px 50px 20px;
 }
 
 .div-actu{
-    margin: 80px 0px 50px 0px;
+    margin: 50px 50px 50px 50px;
 }
 
 .titre-actu{
-    font-size: 1.2rem;
-    margin-left: 30px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
+    font-size: 1.3rem;
+    margin-left: 0px;
 }
 
 .actu{
-    margin: 40px 30px 0px 50px;
+    margin: 20px 15px 0px 25px;
     align-items: center;
 }
 
 .img-actu{
-    width: 700px;
-    border: solid rgba(0, 0, 0, 0.356) 1px;
-    border-radius: 25px;
-    transition: 0.3s;
+    width: 350px;
 }
 
 .img-actu:hover{
-    width: 750px;
+    width: 400px;
     transition: 0.3s;
 }
 
 .text-actu{
-    margin-left: -50px;
+    margin-left: 0px;
     font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -424,4 +419,3 @@ header{
 }
 
 }
-

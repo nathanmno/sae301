@@ -193,3 +193,116 @@ header{
     font-size: 0.7rem;
     font-weight: 600;
 }
+
+@media screen and (max-width: 550px) {
+
+    /*Header*/
+ 
+ .container-flex{
+     flex-direction: column;
+ }
+ 
+ .logo-nav{
+     width: 50px;
+     float: left;
+     margin-left: -30px;
+     margin-bottom: -100px;
+ }
+ 
+ .btn-english-nav{
+     width: 25px;
+     height: 25px;
+     margin-top: 10px;
+ }
+ .btn-french-nav{
+     width: 25px;
+     height: 25px;
+     margin-top: 10px;
+ }
+ 
+ .menu li{
+     width: 150px;
+     font-size: 0.7rem;
+     text-align: center;
+ }
+ 
+ .header-polygone{
+     width: 300px;
+ }
+
+ /*Equipe*/
+
+ .titre{
+    margin: 65px 0px 60px 50px;
+}
+
+.container-profs{
+    margin: 0px 204px 0px 204px;
+}
+
+.prof{
+    margin-right: 20px;
+    padding: 50px 10px 50px 10px;
+    margin-bottom: 30px;
+}
+
+.desc-prof{
+    font-size: 0.9rem;
+}
+
+.nom-prof{
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+#parallelogram{
+    margin-left: 10px;
+    width: 230px;
+    min-height: 120px;
+    max-height: 240px;
+    margin-bottom: 12px;
+    transform: rotate(-2.5deg);
+}
+
+#parallelogram:hover{
+    margin-left: 0px;
+    width: 250px;
+    min-height: 140px;
+    max-height: 260px;
+    margin-bottom: 12px;
+    transform: rotate(0deg);
+}
+
+.voir-matieres{
+    margin: 30px auto 30px auto;
+    font-size: 1rem;
+    color: white;
+    width: fit-content;
+    padding: 8px 45px 8px 45px;
+}
+
+/*Footer*/
+
+.container-liens{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.titre-footer{
+    font-size: 0.7rem;
+    margin-bottom: -10px;
+}
+
+.text-footer{
+    font-size: 0.7rem;
+    margin-bottom: 10px;
+}
+
+.container-copyright{
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 0.5rem;
+} 
+
+}
