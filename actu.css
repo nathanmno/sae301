@@ -67,10 +67,13 @@ header{
 
 .btn-english-nav{
     height: 45px;
+    margin: 0px;
 }
 .btn-french-nav{
     height: 50px;
+    margin: 0px;
 }
+
 
 .list-style{
     list-style: none;
@@ -243,16 +246,20 @@ header{
 
     /*Header*/
  
- .container-flex{
+.container-flex{
      flex-direction: column;
- }
- 
- .logo-nav{
-     width: 50px;
-     float: left;
-     margin-left: -30px;
-     margin-bottom: -100px;
- }
+}
+
+.space-around{
+    align-items: center;
+}
+
+.logo-nav{
+    width: 50px;
+    float: left;
+    margin-left: -400%;
+    margin-bottom: -100px;
+}
  
  .btn-english-nav{
      width: 25px;

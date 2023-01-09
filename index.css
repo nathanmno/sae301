@@ -57,7 +57,7 @@
 /*Header*/
 
 header{
-    height: 100vh;
+    height: fit-content;
     background-color: white;
 }
 
@@ -67,9 +67,11 @@ header{
 
 .btn-english-nav{
     height: 45px;
+    margin: 0px;
 }
 .btn-french-nav{
     height: 50px;
+    margin: 0px;
 }
 
 .list-style{
@@ -82,17 +84,13 @@ header{
     text-align: center;
 }
 
-.menu a{
-    width: 150px;
-}
-
 .menu{
     background-color: #4f7698af;
     padding: 5px 40px 5px 40px;
 }
 
 .header-polygone{
-    width: 510px;
+    width: 37%;
 }
 
 .titre-header{
@@ -419,10 +417,14 @@ header{
     flex-direction: column;
 }
 
+.space-around{
+    align-items: center;
+}
+
 .logo-nav{
     width: 50px;
     float: left;
-    margin-left: -30px;
+    margin-left: -400%;
     margin-bottom: -100px;
 }
 
@@ -448,7 +450,7 @@ header{
 }
 
 .header-polygone{
-    width: 200px;
+    width: 40%;
 }
 
 .titre-header{
@@ -473,6 +475,7 @@ header{
 .btn-header{
     font-size: 0.6rem;
     margin-top: -20px;
+    margin-bottom: 10px;
 }
 
 
