@@ -29,11 +29,15 @@
   display: none;
   animation-name: ChangePage;
   animation-duration: 2.5s;
+  background-color: #242424;
+  color: white;
 }
 
 .french-version {
   animation-name: ChangePage;
   animation-duration: 2.5s;
+  background-color: #242424;
+  color: white;
 }
 
 .center {
@@ -62,7 +66,7 @@
 
 header {
   height: fit-content;
-  background-color: white;
+  background-image: linear-gradient(270deg, white, #4D2465);;
 }
 .list-style a {
   display: flex;
@@ -96,11 +100,16 @@ header {
 
 .menu a {
   width: auto;
+  color: white;
 }
 
 .menu {
-  background-color: #4f7698af;
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(20px);
   padding: 5px 40px 5px 40px;
+  position: fixed;
+  width: 100vw;
 }
 
 .header-polygone {
@@ -127,7 +136,7 @@ header {
 .projet {
   width: 80%;
   /* margin: 50px 250px 50px 250px; */
-  background-color: #4f7698af;
+  background-color: #575757af;
   background-size: cover;
   background-position: center;
   padding-top: 20px;
@@ -149,12 +158,12 @@ header {
 .img-projet {
   width: 100%;
   border-radius: 8px;
-  transition: 0.2s;
+  transition: 0.4s;
 }
 
 .img-projet:hover {
   transform: rotate(-2.5deg);
-  transition: 0.2s;
+  transition: 0.4s;
 }
 
 .nomAndImg {
@@ -213,7 +222,7 @@ header {
   border-radius: 13px;
   color: white;
   width: fit-content;
-  background-color: #4f7698af;
+  background-color: #575757af;
   padding: 8px 45px 8px 45px;
   box-shadow: rgba(59, 59, 59, 0.623) 10px 5px 5px;
   border: white solid 1px;
@@ -221,7 +230,7 @@ header {
 
 .voir-plus-equipe:hover {
   transform: translate(-2px, -2px);
-  background-color: #6e9cc5;
+  background-color: #909090af;
   transition: 0.5s;
 }
 
@@ -233,7 +242,11 @@ header {
   padding-bottom: 80px;
   justify-content: space-around;
   text-align: center;
-  background-color: #163652;
+  background-color: #353434af;
+}
+
+.text-footer{
+  color: white;
 }
 
 .titre-footer {

@@ -29,11 +29,15 @@
   display: none;
   animation-name: ChangePage;
   animation-duration: 2.5s;
+  background-color: #242424;
+  color: white;
 }
 
 .french-version {
   animation-name: ChangePage;
   animation-duration: 2.5s;
+  background-color: #242424;
+  color: white;
 }
 
 .center {
@@ -62,7 +66,7 @@
 
 header {
   height: fit-content;
-  background-color: white;
+  background-image: linear-gradient(270deg, white, #4D2465);;
 }
 .list-style a {
   display: flex;
@@ -94,11 +98,16 @@ header {
 }
 .menu a {
   width: auto;
+  color: white;
 }
 
 .menu {
-  background-color: #4f7698af;
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(20px);
   padding: 5px 40px 5px 40px;
+  position: fixed;
+  width: 100vw;
 }
 
 .header-polygone {
@@ -119,7 +128,7 @@ header {
   margin-bottom: 30px;
   font-size: 2.8rem;
   -webkit-text-stroke: black 1.5px;
-  color: #4f7698af;
+  color: rgba(255, 255, 255, 0.1);
 }
 
 .texte-header {
@@ -132,7 +141,7 @@ header {
 .btn-header {
   width: fit-content;
   padding: 15px;
-  background-color: #4f7698af;
+  background-color: black;
   color: white;
   border-radius: 8px;
   margin-right: 20px;
@@ -140,12 +149,12 @@ header {
   font-family: "Montserrat", sans-serif;
   font-size: 1.1rem;
   box-shadow: rgba(59, 59, 59, 0.623) 10px 5px 5px;
-  border: white solid 1px;
+  border: white solid 0.5px;
 }
 
 .btn-header:hover {
   transform: translate(-2px, -2px);
-  background-color: #6e9cc5;
+  background-color: rgb(68, 68, 68);
   transition: 0.5s;
 }
 
@@ -160,7 +169,6 @@ header {
   font-size: 2rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  margin-top: 70px;
   margin-bottom: 50px;
 }
 
@@ -181,6 +189,16 @@ header {
   font-size: 5rem;
   text-align: right;
   margin-bottom: 80px;
+  background: linear-gradient(180deg, #ECECEC 0%, rgba(255, 255, 255, 0.984375) 0.01%, #4D2465 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+}
+
+.chiffre{
+  color: white;
+  background-color: #242424;
+  padding-top: 70px;
 }
 
 /*Descriptif formation*/
@@ -201,6 +219,10 @@ header {
   font-size: 1.7rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+  background: linear-gradient(180deg, #ECECEC 0%, rgba(255, 255, 255, 0.984375) 0.01%, #4D2465 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .text-desc-formation {
@@ -222,6 +244,10 @@ header {
   margin-left: 30px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+    background: linear-gradient(180deg, #ECECEC 0%, rgba(255, 255, 255, 0.984375) 0.01%, #4D2465 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .actu-nuit-du-dev {
@@ -248,7 +274,7 @@ header {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   color: white;
-  background-color: #4f7698af;
+  background-color: #575757af;
   border-radius: 10px;
   height: fit-content;
   padding: 10px;
@@ -263,7 +289,7 @@ header {
   border-radius: 13px;
   color: white;
   width: fit-content;
-  background-color: #4f7698af;
+  background-color: #575757af;
   padding: 8px 45px 8px 45px;
   box-shadow: rgba(59, 59, 59, 0.623) 10px 5px 5px;
   border: white solid 1px;
@@ -271,7 +297,7 @@ header {
 
 .voir-plus-actu:hover {
   transform: translate(-2px, -2px);
-  background-color: #6e9cc5;
+  background-color: #909090af;
   transition: 0.5s;
 }
 
@@ -288,6 +314,10 @@ header {
   margin-bottom: 60px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+  background: linear-gradient(180deg, #ECECEC 0%, rgba(255, 255, 255, 0.984375) 0.01%, #4D2465 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .container-parallelogram {
@@ -324,7 +354,7 @@ header {
   border-radius: 13px;
   color: white;
   width: fit-content;
-  background-color: #4f7698af;
+  background-color: #575757af;
   padding: 8px 45px 8px 45px;
   box-shadow: rgba(59, 59, 59, 0.623) 10px 5px 5px;
   border: white solid 1px;
@@ -332,7 +362,7 @@ header {
 
 .voir-plus-projets:hover {
   transform: translate(-2px, -2px);
-  background-color: #6e9cc5;
+  background-color: #909090af;
   transition: 0.5s;
 }
 
@@ -349,6 +379,10 @@ header {
   text-align: center;
   font-size: 2.2rem;
   margin-bottom: 15px;
+  background: linear-gradient(180deg, #ECECEC 0%, rgba(255, 255, 255, 0.984375) 0.01%, #4D2465 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .sous-titre-temoignages {
@@ -365,7 +399,7 @@ header {
   margin: 15px;
   text-align: center;
   width: 350px;
-  background-color: #4f7698af;
+  background-color: #575757af;
   border-right: solid 2px black;
   border-bottom: solid 2px black;
   border-radius: 8px;
@@ -404,7 +438,11 @@ header {
   padding-bottom: 80px;
   justify-content: space-around;
   text-align: center;
-  background-color: #163652;
+  background-color: #353434af;
+}
+
+.text-footer{
+  color: white;
 }
 
 .titre-footer {
