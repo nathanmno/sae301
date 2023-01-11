@@ -66,7 +66,7 @@
 
 header {
   height: fit-content;
-  background-image: linear-gradient(270deg, white, #4D2465);;
+  background-image: linear-gradient(270deg, white, #4d2465);
 }
 .list-style a {
   display: flex;
@@ -102,6 +102,28 @@ header {
   width: auto;
   color: white;
 }
+.navbar {
+  background: rgba(0, 0, 0, 0.1) !important;
+  border: 1px solid rgba(0, 0, 0, 0.25) !important;
+  backdrop-filter: blur(20px) !important;
+  position: fixed;
+  width: 100%;
+}
+.nav-link {
+  color: white !important;
+  border-bottom: 3px solid transparent;
+}
+.active {
+  border-bottom: 3px solid white;
+}
+.navbar-nav {
+  /* display: flex; */
+  margin: auto;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
 
 .menu {
   background: rgba(0, 0, 0, 0.1);
@@ -118,18 +140,34 @@ header {
   margin: auto;
 }
 /*Projets etudiants*/
+body h2,
+h4 {
+  background: linear-gradient(
+    180deg,
+    #ececec 0%,
+    rgba(255, 255, 255, 0.984375) 0.01%,
+    #4d2465 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
 
 .titre {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 2rem;
-  margin: 47px 200px 80px 200px;
+  width: 80%;
 }
 
 .container-projets {
   display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
+  padding-top: 50px;
   gap: 50px;
 }
 
@@ -212,6 +250,7 @@ header {
   margin-bottom: 18px;
   transform: rotate(4deg);
   opacity: 0.7;
+  object-fit: cover;
 }
 
 .voir-plus-equipe {
@@ -245,7 +284,7 @@ header {
   background-color: #353434af;
 }
 
-.text-footer{
+.text-footer {
   color: white;
 }
 

@@ -66,7 +66,7 @@
 
 header {
   height: fit-content;
-  background-image: linear-gradient(270deg, white, #4D2465);;
+  background-image: linear-gradient(270deg, white, #4d2465);
 }
 .list-style a {
   display: flex;
@@ -102,6 +102,29 @@ header {
   width: auto;
   color: white;
 }
+.navbar {
+  color: white !important;
+  background: rgba(0, 0, 0, 0.1) !important;
+  border: 1px solid rgba(0, 0, 0, 0.25) !important;
+  backdrop-filter: blur(20px) !important;
+  position: fixed;
+  width: 100%;
+}
+.navbar-nav {
+  /* display: flex; */
+  margin: auto;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.nav-link {
+  color: white !important;
+  border-bottom: 3px solid transparent;
+}
+.active {
+  border-bottom: 3px solid white;
+}
 
 .menu {
   background: rgba(0, 0, 0, 0.1);
@@ -125,7 +148,12 @@ header {
   font-weight: 700;
   font-size: 2rem;
   margin: 47px 200px 50px 200px;
-  background: linear-gradient(180deg, #ECECEC 0%, rgba(255, 255, 255, 0.984375) 0.01%, #4D2465 100%);
+  background: linear-gradient(
+    180deg,
+    #ececec 0%,
+    rgba(255, 255, 255, 0.984375) 0.01%,
+    #4d2465 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -149,7 +177,12 @@ header {
   margin-left: 30px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  background: linear-gradient(180deg, #ECECEC 0%, rgba(255, 255, 255, 0.984375) 0.01%, #4D2465 100%);
+  background: linear-gradient(
+    180deg,
+    #ececec 0%,
+    rgba(255, 255, 255, 0.984375) 0.01%,
+    #4d2465 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -199,7 +232,12 @@ header {
   margin-bottom: 60px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  background: linear-gradient(180deg, #ECECEC 0%, rgba(255, 255, 255, 0.984375) 0.01%, #4D2465 100%);
+  background: linear-gradient(
+    180deg,
+    #ececec 0%,
+    rgba(255, 255, 255, 0.984375) 0.01%,
+    #4d2465 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -262,7 +300,7 @@ header {
   background-color: #353434af;
 }
 
-.text-footer{
+.text-footer {
   color: white;
 }
 

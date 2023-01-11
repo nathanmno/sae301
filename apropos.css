@@ -66,7 +66,7 @@
 
 header {
   height: fit-content;
-  background-image: linear-gradient(270deg, white, #4D2465);;
+  background-image: linear-gradient(270deg, white, #4d2465);
 }
 .list-style a {
   display: flex;
@@ -101,6 +101,28 @@ header {
   width: auto;
   color: white;
 }
+.navbar {
+  background: rgba(0, 0, 0, 0.1) !important;
+  border: 1px solid rgba(0, 0, 0, 0.25) !important;
+  backdrop-filter: blur(20px) !important;
+  position: fixed;
+  width: 100%;
+}
+.navbar-nav {
+  /* display: flex; */
+  margin: auto;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.nav-link {
+  color: white !important;
+  border-bottom: 3px solid transparent;
+}
+.active {
+  border-bottom: 3px solid white;
+}
 
 .menu {
   background: rgba(0, 0, 0, 0.1);
@@ -118,18 +140,49 @@ header {
 }
 
 /*A propos*/
-
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+}
 .titre {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  margin: 65px 0px 32px 204px;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    #ececec 0%,
+    rgba(255, 255, 255, 0.984375) 0.01%,
+    #4d2465 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
-
+.container h2 {
+  background: linear-gradient(
+    180deg,
+    #ececec 0%,
+    rgba(255, 255, 255, 0.984375) 0.01%,
+    #4d2465 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
 .contexte {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  margin: 50px 204px 32px 204px;
+  /* margin: 50px 204px 32px 204px; */
   font-size: 0.9rem;
+}
+.managers-img {
+  display: flex;
+  gap: 20px;
 }
 
 .icon {
@@ -187,7 +240,7 @@ header {
   background-color: #353434af;
 }
 
-.text-footer{
+.text-footer {
   color: white;
 }
 
