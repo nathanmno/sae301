@@ -11,15 +11,15 @@ include "include/footer.php";
 ?>
 
 <?php
-new header("fr", "projets")
+new header("en", "Projects")
 ?>
 <header>
     <?php
-    new nav("index", "", "", "active", "", "", "projets-en", "english", "apropos", "actu", "projets", "matieres", "equipe");
-    new banner("Projets étudiants", "Métiers du multimédia et de l’internet en 3 ans");
+    new nav("index-en", "", "", "active", "", "", "projets", "french", "apropos-en", "actu-en", "projets-en", "matieres-en", "equipe-en");
+    new banner("Student Projects", "Bachelor Multimedia and Internet Professions during 3 years");
     ?>
 </header>
-<h1 class="m-5 ">Projets étudiants</h1>
+<h1 class="m-5 ">Student Projects</h1>
 <div class="projets-container mb-5">
     <?php
     // $titre, $text, $date, $nomEtudiant, $lienImage, $lienProjet

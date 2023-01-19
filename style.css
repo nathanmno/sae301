@@ -63,6 +63,30 @@ nav {
 }
 /* ------PAGE INDEX------ */
 /* Classes réutilisées dans tous le code*/
+.index-container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  gap: 10vh;
+}
+.rounded-lg {
+  border-radius: 1rem !important;
+}
+
+.text-small {
+  font-size: 0.9rem !important;
+}
+
+.custom-separator {
+  width: 5rem;
+  height: 6px;
+  border-radius: 1rem;
+}
+
+.text-uppercase {
+  letter-spacing: 0.2em;
+}
 
 .font-inter {
   font-family: "Inter", sans-serif;
@@ -131,6 +155,66 @@ header {
 
 .list-style {
   list-style: none;
+}
+/* .navbar-toggle {
+  background-color: white !important;
+  border: none;
+}
+.navbar-toggler-icon {
+  background-image: url("./img/menu.png");
+}
+button:focus .navbar-toggler-icon {
+  background-image: url("./img/croix.png");
+} */
+/* ------- */
+.navbar-toggler {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  padding: 0;
+}
+.navbar-toggler-icon {
+  background-image: none;
+}
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+  background-color: white;
+}
+.line {
+  fill: none;
+  stroke: black;
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
 }
 
 .menu li {
@@ -1014,6 +1098,7 @@ header {
 }
 
 .name {
+  color: white;
   margin-bottom: 60px;
 }
 
@@ -1202,9 +1287,123 @@ header {
 }
 
 /* ----------PAGE ACTU------------- */
+@import url("https://fonts.googleapis.com/css?family=Oswald:300,400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
+.gr-1 {
+  background: linear-gradient(170deg, #01e4f8 0%, #1d3ede 100%);
+}
+.gr-2 {
+  background: linear-gradient(170deg, #b4ec51 0%, #429321 100%);
+}
+.gr-3 {
+  background: linear-gradient(170deg, #c86dd7 0%, #3023ae 100%);
+}
+
+.h-100 {
+  height: 100vh !important;
+}
+.align-middle {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.column {
+  margin-top: 3rem;
+  padding-left: 3rem;
+}
+.column:hover {
+  padding-left: 0;
+}
+.column:hover .card .txt {
+  margin-left: 1rem;
+}
+.column:hover .card .txt h1,
+.column:hover .card .txt p {
+  color: rgba(255, 255, 255, 1);
+  opacity: 1;
+}
+.column:hover a {
+  color: rgba(255, 255, 255, 1);
+}
+.column:hover a:after {
+  width: 10%;
+}
+.card {
+  min-height: 170px;
+  margin: 0;
+  padding: 1.7rem 1.2rem;
+  border: none;
+  border-radius: 0;
+  color: rgba(0, 0, 0, 1);
+  letter-spacing: 0.05rem;
+  font-family: "Oswald", sans-serif;
+  box-shadow: 0 0 21px rgba(0, 0, 0, 0.27);
+}
+.card .txt {
+  margin-left: -3rem;
+  z-index: 1;
+}
+.card .txt h1 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.card .txt p {
+  font-size: 0.7rem;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0rem;
+  margin-top: 33px;
+  opacity: 0;
+  color: rgba(255, 255, 255, 1);
+}
+.card a {
+  z-index: 3;
+  font-size: 0.7rem;
+  color: rgba(0, 0, 0, 1);
+  margin-left: 1rem;
+  position: relative;
+  bottom: -0.5rem;
+  text-transform: uppercase;
+}
+.card a:after {
+  content: "";
+  display: inline-block;
+  height: 0.5em;
+  width: 0;
+  margin-right: -100%;
+  margin-left: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 1);
+  transition: 0.5s;
+}
+.card .ico-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.card i {
+  position: relative;
+  right: -50%;
+  top: 60%;
+  font-size: 12rem;
+  line-height: 0;
+  opacity: 0.2;
+  color: rgba(255, 255, 255, 1);
+  z-index: 0;
+}
 
 /* ------------------------- */
 /* Classes réutilisées dans tous le code*/
+.actu-container {
+  padding: 0 10%;
+}
+.actu-container h1 {
+  margin-top: 20px;
+}
 
 .font-inter {
   font-family: "Inter", sans-serif;
@@ -1681,6 +1880,10 @@ header {
 /* Classes réutilisées dans tous le code*/
 
 /* Accordeon */
+.accordion {
+  --bs-accordion-active-bg: none;
+}
+
 .accordion-item h2 {
   -webkit-text-fill-color: white;
   background: rgba(0, 0, 0, 0.5);
@@ -1696,6 +1899,16 @@ header {
 .accordion-item {
   color: white;
   background-color: rgba(0, 0, 0, 0.5);
+}
+.accordion-body {
+  /* display: flex; */
+
+  /* gap: 20px; */
+}
+.img-subjects {
+  /* width: 30vw; */
+  height: 30vh;
+  object-fit: cover;
 }
 
 .font-inter {
