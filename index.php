@@ -5,6 +5,8 @@ include "./include/callToAction.php";
 include "./include/news-projet.php";
 include "./include/quotes.php";
 include "include/footer.php";
+include "include/news.php";
+
 // include "include/news.php";
 // new banner();
 
@@ -23,7 +25,7 @@ new header("fr", "Accueil")
             <h1 class="titre-header">BUT MMI</h1>
             <h2 class="sous-titre-header">Champs-sur-marne</h2>
             <h3 class="texte-header">
-                BUT Métiers du multimédia et de l'internet en 3 ans
+                Brevet Universitaire Technologique des <br> Métiers du Multimédia et de l'Internet <br>(en 3 ans)
             </h3>
             <div class="container-flex all-btn-header">
                 <a href="http://www.dut-mmi-champs.fr/jpo/2022/index.html" class="decoration-none">
@@ -72,7 +74,9 @@ new header("fr", "Accueil")
         CONNECTÉES AU MONDE DE L’INTERNET
         ", "Le BUT MMI vous forme aux métiers du web, du développement back-end, à l’UX Design, en passant par le Webmarketing ou la réalisation de produits audiovisuels. Cette formation vous permet d’acquérir un bagage suffisant pour entrer dans le monde professionnel ou poursuivre vos études en master. Le BUT MMI compte 2600 heures d’enseignement sur trois ans (soit environ 33 h d’enseignement par semaine) partagées entre la communication, les langues, l’informatique, la culture graphique, la culture scientifique et les réseaux.”
         ", "iut.jpg");
+    new allnews("Nuit du dev", "Ces étudiants n'ont passés que 24 h sur ce projet", "./img/nuit-du-dev.png")
     ?>
+
     <div class="newws-container text-center">
         <h2 class="mt-5">PROJETS ETUDIANTS</h2>
         <?php

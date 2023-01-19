@@ -1,50 +1,35 @@
 <?php
 class allnews
 {
-    function __construct($title, $text, $title2, $text2, $title3, $text3) //mets les variables qui seront les textes dna sle fichier ($titre, $soustitre)
+
+    function __construct($title, $text, $image)
     {
-        $html = '
-        <div class="h-100">
-            <div class="row align-middle">
-                <div class="col-md-6 col-lg-4 column">
-                    <div class="card gr-1">
-                        <div class="txt">
-                            <h1>' . $title . '</h1>
-                            <p>' . $text . '
-                            </p>
-                        </div>
-                        <div class="ico-card actu1">
-                            <i class="fa fa-rebel"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 column">
-                    <div class="card gr-2">
-                        <div class="txt">
-                        <h1>' . $title2 . '</h1>
-                        <p>' . $text2 . '
-                        </p>
-                        </div>
-                        <div class="ico-card actu2">
-                            <i class="fa fa-codepen"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 column">
-                    <div class="card gr-3">
-                        <div class="txt">
-                        <h1>' . $title3 . '</h1>
-                        <p>' . $text3 . '
-                        </p>
-                        </div>
-                        <div class="ico-card actu3">
-                            <i class="fa fa-empire"></i>
-                        </div>
-                    </div>
-                </div>
+        $html = '<div class="container-fluid">
+        <div class="row no-gutter">
+            <!-- The image half -->
+            <div class="col-md-6 d-none d-md-flex" style="background-image: url(\'' . $image . '\');background-size: cover;
+            background-position: center center;"></div>
+            <a href="actu.php" class="position-absolute w-100 lien-projets"></a>
     
-            </div>
-        </div>';
+            <!-- The content half -->
+            <div class="col-md-6" style="background-color: black;">
+                <div class="d-flex align-items-center py-5">
+    
+                    <!-- Demo content-->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-10 col-xl-12 mx-2">
+                                <h2 class="display-4"> ' . $title . '</h2>
+                                <p class="text-light mb-4">' . $text . '</p>
+                            </div>
+                        </div>
+                    </div><!-- End -->
+    
+                </div>
+            </div><!-- End -->
+    
+        </div>
+    </div>';
         echo $html;
     }
 }

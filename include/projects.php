@@ -7,8 +7,8 @@ class projects
         $html = '
         <div class="row">
                 <div class="col-md-12 mb-4">
-                    <div class="card card-image" style="background-image: url(' . $lienImage . ');background-size: cover;background-position: center;">
-                        <div class="text-white shadow text-start d-flex align-items-top rgba-black-strong py-4 px-4 px-md-5 rounded" style="background-color: rgba(0, 0, 0, .25); ">
+                    <div class="card card-image rounded shadow" style="background-image: url(' . $lienImage . ');background-size: cover;background-position: center; padding:0;">
+                        <div class="text-white shadow text-left d-flex align-items-top rgba-black-strong py-4 px-4 px-md-5 rounded justify-content-between" style="background-color: rgba(0, 0, 0, .25); ">
                             <div>
                                 <h3>
                                 ' . $date . '
@@ -24,7 +24,7 @@ class projects
                             ' . $nomEtudiant . '
                             </h3>
                         </div>
-                        <a href="' . $lienProjet . '" class="position-absolute w-100 h-100"></a>
+                        <a href="' . $lienProjet . '" class="position-absolute w-1 lien-projets"></a>
                     </div>
                 </div>
             </div>';

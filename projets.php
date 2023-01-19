@@ -19,8 +19,8 @@ new header("fr", "projets")
     new banner("Projets étudiants", "Métiers du multimédia et de l’internet en 3 ans");
     ?>
 </header>
-<h1 class="m-5 ">Projets étudiants</h1>
-<div class="projets-container mb-5">
+<div class="container mb-5">
+    <h1 class="m-5 ">Projets étudiants</h1>
     <?php
     // $titre, $text, $date, $nomEtudiant, $lienImage, $lienProjet
     // new projects("Titre", "Text", "Date", "", "", "");

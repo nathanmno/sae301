@@ -21,7 +21,7 @@ new header("en", "Subjects")
     ?>
 </header>
 <div class="container">
-    <h1 class="mb-3 mt-3">ALL SUBJECTS</h1>
+    <h1 class="m-5">All subjects</h1>
     <div>
 
         <?php

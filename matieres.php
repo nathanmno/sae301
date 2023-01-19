@@ -20,7 +20,7 @@ new header("fr", "Matières")
     ?>
 </header>
 <div class="container">
-    <h1 class="mb-3 mt-3">TOUTES LES MATIERES</h1>
+    <h1 class="m-5">Toutes les matières</h1>
     <div>
 
         <?php
