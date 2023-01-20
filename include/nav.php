@@ -1,7 +1,7 @@
 <?php
 class nav //remplir avec le nom de la fonction a appeler
 {
-  function __construct($link, $active1, $active2, $active3, $active4, $active5, $langue, $drapeau, $pageEn1, $pageEn2, $pageEn3, $pageEn4, $pageEn5) //mets les variables qui seront les textes dna sle fichier ($titre, $soustitre)
+  function __construct($link, $active1, $active2, $active3, $active4, $active5, $langue, $drapeau, $pageEn1, $pageEn2, $pageEn3, $pageEn4, $pageEn5,$pageName1,$pageName2,$pageName3,$pageName4,$pageName5) //mets les variables qui seront les textes dna sle fichier ($titre, $soustitre)
   {
     $html = '
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -19,11 +19,11 @@ class nav //remplir avec le nom de la fonction a appeler
          </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link ' . $active1 . '" aria-current="page" href="./' . $pageEn1 . '.php">À Propos</a>
-              <a class="nav-link ' . $active2 . '" href="./' . $pageEn2 . '.php">Actualités</a>
-              <a class="nav-link ' . $active3 . '" href="./' . $pageEn3 . '.php">Projets</a>
-              <a class="nav-link ' . $active4 . '" href="./' . $pageEn4 . '.php">Matières</a>
-              <a class="nav-link ' . $active5 . '" href="./' . $pageEn5 . '.php">Equipe Pédagogique</a>
+              <a class="nav-link ' . $active1 . '" aria-current="page" href="./' . $pageEn1 . '.php">'.$pageName1.'</a>
+              <a class="nav-link ' . $active2 . '" href="./' . $pageEn2 . '.php">'.$pageName2.'</a>
+              <a class="nav-link ' . $active3 . '" href="./' . $pageEn3 . '.php">'.$pageName3.'</a>
+              <a class="nav-link ' . $active4 . '" href="./' . $pageEn4 . '.php">'.$pageName4.'</a>
+              <a class="nav-link ' . $active5 . '" href="./' . $pageEn5 . '.php">'.$pageName5.'</a>
             </div>
             <a class="navbar-brand" href="./' . $langue . '.php"><img src="./img/' . $drapeau . '-btn.png"
                 alt="button english page version" class="btn-english-nav center" /></a>
