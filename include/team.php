@@ -6,7 +6,7 @@ class team
         $html = '
                 <div class="col-md-5 col-lg-3">
                     <div class="card mx-30">
-                        <img src="./img/' . $image . '" class="card-img-top" alt="...">
+                        <img src="' . $image . '" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">
                             ' . $nom . '</h5>

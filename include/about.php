@@ -20,7 +20,7 @@ class about
             <div class="ryan">
                 <img src="./img/ryan.jpg" alt="" class="icon" />
                 <p class="name">Ryan</p>
-
+ 
             </div>
 
         </div>
