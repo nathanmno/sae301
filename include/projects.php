@@ -24,7 +24,7 @@ class projects
                             ' . $nomEtudiant . '
                             </h3>
                         </div>
-                        <a href="' . $lienProjet . '" class="position-absolute w-1 lien-projets"></a>
+                        <a href="' . $lienProjet . '" class="position-absolute w-100 lien-projets"></a>
                     </div>
                 </div>
             </div>';
