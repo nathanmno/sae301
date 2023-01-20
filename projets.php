@@ -16,7 +16,7 @@ new header("fr", "projets")
 ?>
 <header>
     <?php
-    new nav("index", "", "", "active", "", "", "projets-en", "english", "apropos", "actu", "projets", "matieres", "equipe");
+    new nav("index", "", "", "active", "", "", "projets-en", "english", "apropos", "actu", "projets", "matieres", "equipe","Actualités","À Propos","Projets","Matières","Equipe Pédagogique");
     new banner("Projets étudiants", "Métiers du multimédia et de l’internet en 3 ans");
     ?>
 </header>
@@ -32,9 +32,6 @@ new header("fr", "projets")
 
     ?>
 </div>
-<?php
-  $projets=selectdeuxprojets();
 
-        new news($projets[0]["auteur"], $projets[0]["titre"], $projets[0]["miniature"], $projets[1]["auteur"], $projets[1]["titre"], $projets[1]["miniature"], "projets", "Projets en details"); ?>
 <?php
 new footer();

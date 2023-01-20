@@ -16,7 +16,7 @@ new header("fr", "Professeurs")
 ?>
 <header>
     <?php
-    new nav("index", "", "", "", "", "active", "equipe-en", "english", "apropos", "actu", "projets", "matieres", "equipe");
+    new nav("index", "", "", "", "", "active", "equipe-en", "english", "apropos", "actu", "projets", "matieres", "equipe","Actualités","À Propos","Projets","Matières","Equipe Pédagogique");
     new banner("Professeurs", "Métiers du multimédia et de l’internet en 3 ans");
     ?>
 </header>

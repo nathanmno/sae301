@@ -19,7 +19,7 @@ new header("fr", "Accueil")
 ?>
 <header>
     <?php
-    new nav("index", "", "", "", "", "", "index-en", "english", "apropos", "actu", "projets", "matieres", "equipe");
+    new nav("index", "", "", "", "", "", "index-en", "english", "apropos", "actu", "projets", "matieres", "equipe","Actualités","À Propos","Projets","Matières","Equipe Pédagogique");
     ?>
     <div class="container-flex container-banner">
         <img src="./img/octogon.png" alt="" srcset="" class="index-octogon">

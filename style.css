@@ -290,6 +290,7 @@ button:focus .navbar-toggler-icon {
   height: 75vh;
 }
 .titre-header {
+  margin-top: 10%;
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
   font-size: 6rem;

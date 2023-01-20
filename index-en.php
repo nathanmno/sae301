@@ -16,7 +16,7 @@ new header("en", "Home")
 ?>
 <header>
     <?php
-    new nav("index-en", "", "", "", "", "", "index", "french", "apropos-en", "actu-en", "projets-en", "matieres-en", "equipe-en");
+    new nav("index-en", "", "", "", "", "", "index", "french", "apropos-en", "actu-en", "projets-en", "matieres-en", "equipe-en","News","About","Projects","Subjects","Teachers");
     ?>
     <div class="container-flex container-banner">
         <img src="./img/octogon.png" alt="" srcset="" class="index-octogon">

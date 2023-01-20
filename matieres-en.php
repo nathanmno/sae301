@@ -17,7 +17,7 @@ new header("en", "Subjects")
 ?>
 <header>
     <?php
-    new nav("index-en", "", "", "", "active", "", "matieres", "french", "apropos-en", "actu-en", "projets-en", "matieres-en", "equipe-en");
+    new nav("index-en", "", "", "", "active", "", "matieres", "french", "apropos-en", "actu-en", "projets-en", "matieres-en", "equipe-en","News","About","Projects","Subjects","Teachers");
     new banner("Subjects", "Bachelor Multimedia and Internet Professions during 3 years");
     ?>
 </header>

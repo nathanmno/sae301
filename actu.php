@@ -15,7 +15,7 @@ new header("fr", "Actualités")
 ?>
 <header>
     <?php
-    new nav("index", "", "active", "", "", "", "actu-en", "english", "apropos", "actu", "projets", "matieres", "equipe");
+    new nav("index", "", "active", "", "", "", "actu-en", "english", "apropos", "actu", "projets", "matieres", "equipe","Actualités","À Propos","Projets","Matières","Equipe Pédagogique");
     new banner("Actualités", "Métiers du multimédia et de l’internet en 3 ans");
     ?>
 </header>
