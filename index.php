@@ -6,6 +6,8 @@ include "./include/news-projet.php";
 include "./include/quotes.php";
 include "include/footer.php";
 include "include/news.php";
+include "./include/modele.php";
+
 
 // include "include/news.php";
 // new banner();
@@ -41,34 +43,9 @@ new header("fr", "Accueil")
         </div>
     </div>
 </header>
-<div class="index-container">
-    <div class="chiffre">
-        <h4 class="title-chiffres center2">Chiffres de notre formation</h4>
-        <div class="container-flex div-chiffres">
-            <div>
-                <h4 class="texts-chiffres">ANNÉES D'EXISTANCE</h4>
-                <hr />
-                <p class="chiffres" number="28">0</p>
-            </div>
-            <div>
-                <h4 class="texts-chiffres">DIPLÔMÉS</h4>
-                <hr />
-                <p class="chiffres" number="1600">0</p>
-            </div>
-            <div>
-                <h4 class="texts-chiffres">CANDIDATS CHAQUE ANNÉES</h4>
-                <hr />
-                <p class="chiffres" number="2500">0</p>
-            </div>
-            <div>
-                <h4 class="texts-chiffres">PLACES</h4>
-                <hr />
-                <p class="chiffres" number="56">0</p>
-            </div>
-        </div>
-        <hr />
-    </div>
     <?php
+    $chiffres=selectchiffresmmi();
+    numbers($chiffres["annee"], $chiffres["diplomes"], $chiffres["candidatures"], $chiffres["places"]);
     // ($titre, $sousTitre, $text, $image)
     new callToAction("MMI | Description de la formation ", "MMI EN BREF : ACQUÉRIR ET DÉVELOPPER DES COMPÉTENCES PLURIDISCIPLINAIRES
         CONNECTÉES AU MONDE DE L’INTERNET
@@ -80,7 +57,13 @@ new header("fr", "Accueil")
     <div class="newws-container text-center">
         <h2 class="mt-5">PROJETS ETUDIANTS</h2>
         <?php
-        new news("Amel Chabah", "Resaweb", "projet1.png",  "Timothé Bureau", "Cv Vidéo", "projet2.jpg", "projets", "Projets en détails"); ?>
+
+// new news("Timothé Bureau", "Cv Vidéo", "projet3.png",  "petit titre 2", "texte2", "projet1.png");
+     $projets=selectdeuxprojets();
+
+    new news($projets[0]["auteur"], $projets[0]["titre"], $projets[0]["miniature"], $projets[1]["auteur"], $projets[1]["titre"], $projets[1]["miniature"], "projets", "Projets en details");
+
+?>
     </div>
     <?php
     new quotes("Témoignages", "Depuis 25 ans, le BUT (ex. DUT) MMI Champs-sur-Marne forme les professionnels du Web", "Étudiante Ingénieur", "Laurence, promo 2021", "J’ai choisi MMI car c'est une formation qui propose un bon mélange entre technique et artistique. Par son grand nombre de disciplines enseignées, c'est également une formation qui favorise la découverte de soi (pour les lycéens encore un peu perdus) : les domaines que l'on préfère, ceux que l'on aime moins, et ceux sur lesquels on souhaiterait poursuivre.\"", "Futur réalisateur", "Guillaume, Promo 2019", "\"À mon arrivée en DUT MMI, je n’avais qu’une vague idée de mon futur, j’ai toujours beaucoup aimé le cinéma et l’audiovisuel mais je pensais que c’était un monde très difficile d’accès. Cependant, grâce aux nombreux cours d’analyse filmique et à la réalisation de plusieurs courts-métrages j’ai transformé cette passion en véritable vocation, grâce à la formation j’ai reçu toutes les connaissances dont j’avais besoin, et je ne vois plus qu’un seul avenir pour moi : devenir réalisateur.\"", "UX UI Designer", "Flora, promo 2015", "\"On ne s'ennuie jamais, on travaille sur des projets qui répondent à des problématiques très diverses. De plus, le fait de pouvoir travailler en associant code et business/marketing est vraiment intéressant. MMI permet d'avoir accès à ce type de métier, rapidement et de manière professionnelle.")

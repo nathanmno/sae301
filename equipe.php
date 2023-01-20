@@ -4,6 +4,7 @@ include "./include/nav.php";
 include "./include/banner.php";
 include "./include/team.php";
 include "include/footer.php";
+include "./include/modele.php";
 
 // include "include/news.php";
 // new banner();
@@ -23,7 +24,16 @@ new header("fr", "Professeurs")
 
     <div class="wrapper">
         <div class="container">
-            <h1 class="m-5">TITRE DE LA PAGE</h1>
+            <h1 class="m-5">Professeurs</h1>
+            <div class="row justify-content-center">
+                <?php
+                $profs=selectprofs();
+                foreach($profs as $p){
+                    new team($p["prenom"]." ".$p["nom"], $p["img"],$p["description"]);
+                }
+                ?>
+            </div>
+        <!--
             <div class="row justify-content-center">
                 <?php
                 new team("Gaëlle Charpentier", "gaelle.jpg", "Professeur d’Intégration Web");
@@ -63,6 +73,7 @@ new header("fr", "Professeurs")
                 new team("Bilel Benbouzid", "bilel.jpg", "Professeur de Culture Numérique");
                 ?>
             </div>
+-->
 
         </div>
     </div>

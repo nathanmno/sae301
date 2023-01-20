@@ -6,6 +6,7 @@ include "./include/matiere-en.php";
 include "./include/news-projet.php";
 include "include/footer.php";
 include "include/new.php";
+include "./include/modele.php"
 
 // new banner();
 
@@ -25,12 +26,21 @@ new header("en", "Subjects")
     <div>
 
         <?php
-        new matieresEn();
+        $matieres=selectmatieres();
+        foreach($matieres as $m){
+            new matieresEn($m["id"],$m["nom"], $m["img"], $m["texte2"]);
+        };
+     
         ?>
     </div>
-    <?php
-    new actu("Trip in London</br>for the MMI2", "MMI2 traveled to London this year for about 1 week. Before this covid epidemic, the second-year trip was a tradition. Thanks to the improvement of this epidemic, the trip could take place. Always appreciated by both the accompanying teachers and the students, these trips have been a success for years.")
-    ?>
 </div>
+    <?php
+
+     // new news("Timothé Bureau", "Cv Vidéo", "projet3.png",  "petit titre 2", "texte2", "projet1.png");
+          $projets=selectdeuxprojets();
+ 
+         new news($projets[0]["auteur"], $projets[0]["titre"], $projets[0]["miniature"], $projets[1]["auteur"], $projets[1]["titre"], $projets[1]["miniature"], "projets", "Projets en details");
+ 
+     ?>
 <?php
 new footer();
