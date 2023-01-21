@@ -286,7 +286,7 @@ button:focus .navbar-toggler-icon {
   align-items: flex-start;
   gap: 5vh;
   margin-left: 6%;
-  padding-top: 50px;
+  margin-top: 5vh;
   height: 75vh;
 }
 .titre-header {
@@ -294,7 +294,7 @@ button:focus .navbar-toggler-icon {
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
   font-size: 6rem;
-  width: 90%;
+  width: 100%;
   color: black;
   z-index: 1000;
 }
